@@ -78,7 +78,7 @@ This renders *./views/index.maruku* template
 within *./views/application.maruku* layout.
 
 
-## Sample layout for maruku templates
+## Sample layout for Maruku templates
 
     CSS: /stylesheets/application.css /stylesheets/print.css
     Lang: pl
