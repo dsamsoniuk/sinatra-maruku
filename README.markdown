@@ -8,6 +8,12 @@ A few links:
 * [Maruku features](http://maruku.rubyforge.org/maruku.html)
 * [Literate Maruku](http://www.slideshare.net/schmidt/literate-maruku)
 
+Testing Rack apps:
+
+* Bryan Helmkamp, [Rack::Test released: Simply test any Rack-compatible 
+  app](http://www.brynary.com/2009/3/5/rack-test-released-a-simple-testing-api-for-rack-based-frameworks-and-apps)
+* [rack-test](http://github.com/brynary/rack-test/)
+
 To use this extension, first install the *sinatra-maruku* gem:
 
     git clone git://github.com/wbzyl/sinatra-maruku.git
