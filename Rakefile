@@ -13,6 +13,8 @@ begin
     s.homepage = "http://github.com/wbzyl/sinatra-maruku"
     s.description = "An extension providing Maruku templates for Sinatra applications."
     s.authors = ["Włodek Bzyl"]
+    
+    s.add_dependency 'maruku', '>=0.6.0'        
   end
 rescue LoadError
   puts "Jeweler not available."
