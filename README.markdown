@@ -1,49 +1,44 @@
-# Extension providing Maruku templates for Sinatra apps
+# Sinatra Maruku Extension
 
-The gem provides a request-helper method named `maruku`
+The *sinatra-maruku* extension provides `maruku` helper method
 for rendering Maruku templates.
 
-A few links:
+To install it, run: 
 
-* [Maruku features](http://maruku.rubyforge.org/maruku.html)
-* [Literate Maruku](http://www.slideshare.net/schmidt/literate-maruku)
+    sudo gem install wbzyl-sinatra-maruku -s http://gems.github.com
 
-Testing Rack apps:
+To test it, create a simple Sinatra application:
 
-* Bryan Helmkamp, [Rack::Test released: Simply test any Rack-compatible 
-  app](http://www.brynary.com/2009/3/5/rack-test-released-a-simple-testing-api-for-rack-based-frameworks-and-apps)
-* [rack-test](http://github.com/brynary/rack-test/)
-
-To use this extension, first install the *sinatra-maruku* gem:
-
-    git clone git://github.com/wbzyl/sinatra-maruku.git
-    cd sinatra-maruku
-    gem build sinatra-maruku
-    sudo gem install sinatra-maruku
-
-Then create a simple Sinatra application *app.rb*:
-
+    # app.rb
     require 'rubygems'
     require 'sinatra'
+      
+    gem 'wbzyl-sinatra-maruku', '>=0.0.6'
     require 'sinatra/maruku'
     
     get "/" do
       maruku "# Hello Maruku"
     end
 
-and run the above code:
+and run it with:
 
     ruby app.rb
 
-The result could be seen here: *http://localhost:4567*.
+The result could be seen at *http://localhost:4567*.
 
-Another example could be find in the *examples* directory.   
+Another example could be find in the *examples* directory. 
 Run it with:
 
     rackup -p 4567 config.ru
 
-Now, visit the following url *http://localhost:4567/hello*
-and contemplate the sheer beauty of the rendered code.
+and visit *http://localhost:4567/hello2* to contemplate the sheer 
+beauty of rendered text written in Maruku notation.
+
+
+## Two links to Maruku related material
+
+* [Maruku features](http://maruku.rubyforge.org/maruku.html)
+* [Literate Maruku](http://www.slideshare.net/schmidt/literate-maruku)
 
 
 ## Template Languages (*update to The Sinatra Book*) 

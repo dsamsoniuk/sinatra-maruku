@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sinatra-maruku}
-  s.version = "0.0.6"
+  s.version = "0.0.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["W\305\202odek Bzyl"]
-  s.date = %q{2009-05-19}
-  s.description = %q{An extension providing Maruku templates for Sinatra applications.}
+  s.authors = ["Wlodek Bzyl"]
+  s.date = %q{2009-05-22}
+  s.description = %q{}
   s.email = %q{matwb@univ.gda.pl}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -51,11 +51,20 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<sinatra>, [">= 0.9.2"])
       s.add_runtime_dependency(%q<maruku>, [">= 0.6.0"])
+      s.add_development_dependency(%q<rack>, [">= 1.0.0"])
+      s.add_development_dependency(%q<rack-test>, [">= 0.3.0"])
     else
+      s.add_dependency(%q<sinatra>, [">= 0.9.2"])
       s.add_dependency(%q<maruku>, [">= 0.6.0"])
+      s.add_dependency(%q<rack>, [">= 1.0.0"])
+      s.add_dependency(%q<rack-test>, [">= 0.3.0"])
     end
   else
+    s.add_dependency(%q<sinatra>, [">= 0.9.2"])
     s.add_dependency(%q<maruku>, [">= 0.6.0"])
+    s.add_dependency(%q<rack>, [">= 1.0.0"])
+    s.add_dependency(%q<rack-test>, [">= 0.3.0"])
   end
 end

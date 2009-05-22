@@ -20,5 +20,6 @@ module Sinatra
       end  
     end
   end
+  
   helpers Maruku
 end
