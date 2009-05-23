@@ -31,7 +31,7 @@ Run it with:
 
     rackup -p 4567 config.ru
 
-and visit *http://localhost:4567/hello2* to contemplate the sheer 
+and visit *http://localhost:4567* to contemplate the sheer 
 beauty of rendered text written in Maruku notation.
 
 
