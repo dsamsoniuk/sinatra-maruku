@@ -8,8 +8,8 @@ module Sinatra
     end
     
   private
-    def render_maruku(template, data, options, locals, &block)
-      maruku_src = render_erb(template, data, options, locals, &block)
+    def render_maruku(data, options, locals, &block)
+      maruku_src = render_erb(data, options, locals, &block)
       instance = ::Maruku.new(maruku_src, options)
       if block_given?
         # render layout
