@@ -1,10 +1,10 @@
-#ENV['RACK_ENV'] = 'test'
-
 require 'rubygems'
 require 'test/unit'
 require 'rack/test'
 
-$LOAD_PATH.unshift(File.dirname(__FILE__))
+path = File.expand_path("../lib" + File.dirname(__FILE__))
+$:.unshift(path) unless $:.include?(path)
+
 require 'sinatra/maruku'
 
 class Test::Unit::TestCase
