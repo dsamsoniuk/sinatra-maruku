@@ -12,7 +12,7 @@ begin
     gem.description = gem.description
     gem.authors = ["Wlodek Bzyl"]
     
-    gem.add_runtime_dependency 'sinatra', '>=0.9.2'            
+    gem.add_runtime_dependency 'sinatra', '>=0.10.1'            
     gem.add_runtime_dependency 'maruku', '>=0.6.0'        
     
     gem.add_development_dependency 'rack', '>=1.0.0'

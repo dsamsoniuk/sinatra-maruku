@@ -13,7 +13,7 @@ To test it, create a simple Sinatra application:
     require 'rubygems'
     require 'sinatra'
       
-    gem 'wbzyl-sinatra-maruku', '>=0.0.6'
+    gem 'wbzyl-sinatra-maruku'
     require 'sinatra/maruku'
     
     get "/" do
